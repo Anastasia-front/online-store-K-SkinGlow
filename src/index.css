@@ -1,9 +1,6 @@
 @import-normalize;
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Montagu+Slab:wght@700&display=swap');
 
-/* font-family: 'Inter', sans-serif;
-font-family: 'Montagu Slab', serif;*/
-
 :root {
 	/* colors */
 	--black-cl: #101010;
@@ -14,12 +11,16 @@ font-family: 'Montagu Slab', serif;*/
 
 	/* size */
 
+	/* fonts */
+	--main-font: 'Inter', sans-serif;
+	--secondary-font: 'Montagu Slab', serif;
+
 	/* animat */
 }
 
 body {
 	margin: 0;
-	font-family: 'Inter', sans-serif;
+	font-family: var(--main-font);
 }
 
 ul {
