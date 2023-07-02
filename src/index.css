@@ -3,17 +3,15 @@
 
 :root {
 	/* colors */
-	--black-cl: #101010;
-	--light-black-cl: #282828;
-	--dark-gray-cl: #636363;
-	--gray-cl: #adadad;
-	--white-cl: #ffffff;
-
-	/* size */
+	--color-black: #101010;
+	--color-light-black: #282828;
+	--color-dark-gray: #636363;
+	--color-gray: #adadad;
+	--color-white: #ffffff;
 
 	/* fonts */
-	--main-font: 'Inter', sans-serif;
-	--secondary-font: 'Montagu Slab', serif;
+	--font-main: 'Inter', sans-serif;
+	--font-secondary: 'Montagu Slab', serif;
 
 	/* animat */
 }
