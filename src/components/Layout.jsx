@@ -1,10 +1,11 @@
-// import { AppBar } from './AppBar/AppBar';
 import { Suspense } from 'react';
 import { Outlet } from 'react-router-dom';
 
 import { styled } from 'styled-components';
 
 import { device } from '../utils/breakpoints';
+import { Footer } from './Footer/Footer';
+import { Header } from './Header/Header';
 
 const Wrapper = styled.div`
 	width: 100%;
@@ -28,11 +29,11 @@ const Wrapper = styled.div`
 function Layout() {
 	return (
 		<Wrapper>
-			{/* <AppBar /> */}
+			<Header />
 			<Suspense fallback={null}>
 				<Outlet />
 			</Suspense>
-			{/* <Footer/> */}
+			<Footer />
 		</Wrapper>
 	);
 }
