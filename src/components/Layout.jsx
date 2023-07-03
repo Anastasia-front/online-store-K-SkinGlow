@@ -25,7 +25,7 @@ const Wrapper = styled.div`
 	}
 `;
 
-export const Layout = () => {
+function Layout() {
 	return (
 		<Wrapper>
 			{/* <AppBar /> */}
@@ -35,4 +35,6 @@ export const Layout = () => {
 			{/* <Footer/> */}
 		</Wrapper>
 	);
-};
+}
+
+export default Layout;
