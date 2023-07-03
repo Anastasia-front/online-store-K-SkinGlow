@@ -4,6 +4,8 @@ import { Outlet } from 'react-router-dom';
 
 import { styled } from 'styled-components';
 
+import { device } from '../utils/breakpoints';
+
 const Wrapper = styled.div`
 	width: 100%;
 	padding-left: 15px;
@@ -11,18 +13,14 @@ const Wrapper = styled.div`
 	margin-right: auto;
 	margin-left: auto;
 
-	@media screen and (min-width: 320px) {
-		width: 320px;
+	@media ${device.mobile} {
+		width: 360px;
 	}
 
-	@media screen and (min-width: 480px) {
-		width: 480px;
-	}
-
-	@media screen and (min-width: 768px) {
+	@media ${device.tablet} {
 		width: 768px;
 	}
-	@media screen and (min-width: 1200px) {
+	@media ${device.laptop} {
 		width: 1200px;
 	}
 `;
