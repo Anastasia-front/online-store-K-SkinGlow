@@ -14,6 +14,7 @@
 	--font-secondary: 'Montagu Slab', serif;
 
 	/* animat */
+	--animat: 0.5s ease-in-out;
 }
 
 body {
