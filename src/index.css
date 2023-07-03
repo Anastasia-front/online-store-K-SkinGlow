@@ -19,7 +19,7 @@
 
 body {
 	margin: 0;
-	font-family: var(--main-font);
+	font-family: var(--font-main);
 }
 
 ul {
@@ -45,4 +45,9 @@ img {
 
 	object-fit: cover;
 	object-position: center;
+}
+
+a {
+	text-decoration: none;
+	color: currentColor;
 }

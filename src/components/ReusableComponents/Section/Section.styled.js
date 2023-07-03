@@ -8,7 +8,6 @@ export const StyleSection = styled.section`
 	row-gap: 80px;
 `;
 export const Title = styled.h2`
-	font-family: var(--font-main);
 	font-size: 32px;
 	font-weight: 500;
 	line-height: 1.2;

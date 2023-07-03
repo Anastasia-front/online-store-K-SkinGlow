@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-import { Button } from './CustomButtom';
+import { Button } from './CustomButton';
 
 export function CustomButton({ label, onClick, color, $bgcolor }) {
 	return (
