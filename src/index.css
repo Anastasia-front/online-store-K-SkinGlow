@@ -1,25 +1,24 @@
 @import-normalize;
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Montagu+Slab:wght@700&display=swap');
 
-/* font-family: 'Inter', sans-serif;
-font-family: 'Montagu Slab', serif;*/
-
 :root {
 	/* colors */
-	--black-cl: #101010;
-	--light-black-cl: #282828;
-	--dark-gray-cl: #636363;
-	--gray-cl: #adadad;
-	--white-cl: #ffffff;
+	--color-black: #101010;
+	--color-light-black: #282828;
+	--color-dark-gray: #636363;
+	--color-gray: #adadad;
+	--color-white: #ffffff;
 
-	/* size */
+	/* fonts */
+	--font-main: 'Inter', sans-serif;
+	--font-secondary: 'Montagu Slab', serif;
 
 	/* animat */
 }
 
 body {
 	margin: 0;
-	font-family: 'Inter', sans-serif;
+	font-family: var(--main-font);
 }
 
 ul {
