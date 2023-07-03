@@ -4,7 +4,7 @@ import { Button } from './CustomButton';
 
 export function CustomButton({ label, onClick, color, $bgcolor }) {
 	return (
-		<Button onClick={onClick} style={{ backgroundColor: $bgcolor, color: color }}>
+		<Button onClick={onClick} style={{ backgroundColor: $bgcolor, color: color }} type="button">
 			{label}
 		</Button>
 	);

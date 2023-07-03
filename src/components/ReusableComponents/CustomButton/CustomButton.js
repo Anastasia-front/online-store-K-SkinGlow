@@ -5,7 +5,7 @@ export const Button = styled.button`
 	width: 220px;
 	height: 50px;
 	background-color: ${({ $bgcolor }) => $bgcolor};
-	padding: 13px;
+	padding: 12px 24px;
 	cursor: pointer;
 
 	color: ${({ color }) => color};

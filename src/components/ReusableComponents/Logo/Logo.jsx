@@ -5,7 +5,9 @@ import { LogoContainer, StyledLink } from './Logo.styled';
 export function Logo({ color, $bgcolor }) {
 	return (
 		<LogoContainer style={{ backgroundColor: $bgcolor }}>
-			<StyledLink style={{ color: color }}>K-SkinGlow</StyledLink>
+			<StyledLink to="/" style={{ color: color }}>
+				K-SkinGlow
+			</StyledLink>
 		</LogoContainer>
 	);
 }
