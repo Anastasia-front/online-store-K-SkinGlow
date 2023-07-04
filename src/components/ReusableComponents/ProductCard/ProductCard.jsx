@@ -1,3 +1,36 @@
-export function ProductCard() {
-	return <div>ProductCard</div>;
+import PropTypes from 'prop-types';
+
+import icons from '../../../assets/sprite.svg';
+import { Bag, Brand, Container, Favourite, ImageWrapper, Name, Price, PriceInfo } from './ProductCard.styled';
+
+export function ProductCard({ imagePath, width, productName, brand, price, isFavourite }) {
+	return (
+		<Container>
+			<ImageWrapper>
+				<img src={imagePath} alt="product" width={width} height="355" />
+				<Favourite width={24} height={24}>
+					{isFavourite ? <use href={icons + '#favorite2'} /> : <use href={icons + '#favourite'} />}
+				</Favourite>
+			</ImageWrapper>
+			<div>
+				<Name>{productName}</Name>
+				<Brand>{brand}</Brand>
+				<PriceInfo>
+					<Price>{price} UAH</Price>
+					<Bag width={24} height={24}>
+						<use href={icons + '#bag'} />
+					</Bag>
+				</PriceInfo>
+			</div>
+		</Container>
+	);
 }
+
+ProductCard.propTypes = {
+	imagePath: PropTypes.string.isRequired,
+	width: PropTypes.string.isRequired,
+	productName: PropTypes.string.isRequired,
+	brand: PropTypes.string.isRequired,
+	price: PropTypes.string.isRequired,
+	isFavourite: PropTypes.bool.isRequired,
+};
