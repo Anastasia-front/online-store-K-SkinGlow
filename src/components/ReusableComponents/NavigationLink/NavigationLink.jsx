@@ -1,6 +1,8 @@
+import PropTypes from 'prop-types';
+
 import { NavList, StyledLink } from './NavigationLink.styled';
 
-export function NavigationLink() {
+export function NavigationLink({ color, direction }) {
 	const links = [
 		{
 			text: 'Catalog',
@@ -18,13 +20,20 @@ export function NavigationLink() {
 
 	return (
 		<nav>
-			<NavList>
+			<NavList style={{ flexDirection: direction }}>
 				{links.map(({ link, text }, index) => (
 					<li key={index}>
-						<StyledLink to={link}>{text}</StyledLink>
+						<StyledLink to={link} style={{ color: color }}>
+							{text}
+						</StyledLink>
 					</li>
 				))}
 			</NavList>
 		</nav>
 	);
 }
+
+NavigationLink.propTypes = {
+	color: PropTypes.string.isRequired,
+	direction: PropTypes.string.isRequired,
+};
