@@ -4,15 +4,15 @@ export function NavigationLink() {
 	const links = [
 		{
 			text: 'Catalog',
-			link: '/',
+			link: '#catalog',
 		},
 		{
 			text: 'Order & Delivery',
-			link: '/',
+			link: '#orderDelivery',
 		},
 		{
 			text: 'Contact Us',
-			link: '/',
+			link: '#contact',
 		},
 	];
 

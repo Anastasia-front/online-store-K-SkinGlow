@@ -1,9 +1,9 @@
 // import { Button } from '../../ReusableComponents';
-import { Container } from '../../ReusableComponents/Section/Section.styled';
+import { Container } from '../../ReusableComponents';
 
 export function Hero() {
 	return (
-		<Container>
+		<Container id="catalog">
 			Hero
 			{/* <Button color="var(--color-white)" $bgcolor="var(--color-black)">
 				Catalog
