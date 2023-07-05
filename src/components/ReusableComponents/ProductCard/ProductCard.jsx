@@ -1,15 +1,26 @@
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+
 import PropTypes from 'prop-types';
 
 import icons from '../../../assets/sprite.svg';
 import { Bag, Brand, Container, Favourite, ImageWrapper, Name, Price, PriceInfo } from './ProductCard.styled';
 
-export function ProductCard({ imagePath, width, productName, brand, price, isFavourite }) {
+export function ProductCard({ imagePath, width, productName, brand, price }) {
+	const [isFavourite, setIsFavourite] = useState(false);
+
+	const handleFavouriteToggle = () => {
+		setIsFavourite(!isFavourite);
+	};
+
 	return (
 		<Container>
 			<ImageWrapper>
-				<img src={imagePath} alt="product" width={width} height="355" />
-				<Favourite width={24} height={24}>
-					{isFavourite ? <use href={icons + '#favorite2'} /> : <use href={icons + '#favourite'} />}
+				<Link to="/">
+					<img src={imagePath} alt="product" width={width} height="355" />
+				</Link>
+				<Favourite width={24} height={24} $isfavourite={isFavourite.toString()} onClick={handleFavouriteToggle}>
+					<use href={icons + '#favourite'} />
 				</Favourite>
 			</ImageWrapper>
 			<div>
@@ -32,5 +43,4 @@ ProductCard.propTypes = {
 	productName: PropTypes.string.isRequired,
 	brand: PropTypes.string.isRequired,
 	price: PropTypes.string.isRequired,
-	isFavourite: PropTypes.bool.isRequired,
 };

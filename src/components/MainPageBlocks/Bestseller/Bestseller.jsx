@@ -13,7 +13,6 @@ export function Bestseller() {
 					productName="Revitalizing Youth Protect Serum"
 					brand="Radiant Seoul Beauty"
 					price="560"
-					isFavourite={false}
 				/>
 				<Button color="var(--color-black)" $bgcolor="var(--color-white)">
 					View All

@@ -1,16 +1,14 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 export const Container = styled.div`
 	position: relative;
-`;
-
-const iconStyles = css`
-	cursor: pointer;
-	transition: transform var(--animat);
+	height: 100%;
+	transition: box-shadow var(--animat), transform var(--animat);
 
 	&:hover,
 	&:focus {
-		transform: scale(1.5);
+		box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+		transform: translateY(-4px);
 	}
 `;
 
@@ -18,7 +16,8 @@ export const Favourite = styled.svg`
 	position: absolute;
 	top: 16px;
 	right: 16px;
-	${iconStyles}
+	fill: ${({ $isfavourite }) => ($isfavourite === 'true' ? 'var(--color-black)' : 'transparent')};
+	cursor: pointer;
 `;
 
 export const ImageWrapper = styled.div`
@@ -53,5 +52,11 @@ export const Price = styled.p`
 `;
 
 export const Bag = styled.svg`
-	${iconStyles}
+	cursor: pointer;
+	transition: transform var(--animat);
+
+	&:hover,
+	&:focus {
+		transform: scale(1.5);
+	}
 `;
