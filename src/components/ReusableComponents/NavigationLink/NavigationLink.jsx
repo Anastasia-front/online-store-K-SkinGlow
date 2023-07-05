@@ -6,15 +6,11 @@ export function NavigationLink({ color, direction }) {
 	const links = [
 		{
 			text: 'Catalog',
-			link: '#catalog',
+			link: '/',
 		},
 		{
 			text: 'Order & Delivery',
-			link: '#orderDelivery',
-		},
-		{
-			text: 'Contact Us',
-			link: '#contact',
+			link: '/',
 		},
 	];
 

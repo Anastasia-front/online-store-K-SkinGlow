@@ -1,5 +1,5 @@
 /* eslint-disable indent */
-import { HashLink } from 'react-router-hash-link';
+import { NavLink } from 'react-router-dom';
 
 import { styled } from 'styled-components';
 
@@ -8,7 +8,7 @@ export const NavList = styled.ul`
 	gap: ${({ style }) => (style.flexDirection === 'row' ? '24px' : '16px')};
 `;
 
-export const StyledLink = styled(HashLink)`
+export const StyledLink = styled(NavLink)`
 	position: relative;
 	font-size: 20px;
 	line-height: 1.5;
