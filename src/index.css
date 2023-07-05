@@ -17,6 +17,10 @@
 	--animat: 0.5s ease-in-out;
 }
 
+* {
+	box-sizing: border-box;
+}
+
 body {
 	margin: 0;
 	font-family: var(--font-main);

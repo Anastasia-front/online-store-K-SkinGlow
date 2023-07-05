@@ -1,11 +1,16 @@
 /* eslint-disable indent */
+import { NavLink } from 'react-router-dom';
+
 import { styled } from 'styled-components';
 
-export const Button = styled.button`
+export const Button = styled(NavLink)`
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	width: 220px;
 	height: 50px;
-	background-color: ${({ $bgcolor }) => $bgcolor};
 	padding: 12px 24px;
+	background-color: ${({ $bgcolor }) => $bgcolor};
 	cursor: pointer;
 
 	color: ${({ color }) => color};
