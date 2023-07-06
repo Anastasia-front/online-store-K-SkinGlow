@@ -1,3 +1,5 @@
+import { NavLink } from 'react-router-dom';
+
 import styled from 'styled-components';
 
 export const Container = styled.div`
@@ -24,11 +26,18 @@ export const ImageWrapper = styled.div`
 	margin-bottom: 16px;
 `;
 
-export const Name = styled.h3`
+export const Name = styled(NavLink)`
 	font-size: 16px;
 	line-height: 1.5;
 	font-weight: 400;
 	margin-bottom: 8px;
+	transition: transform var(--animat);
+
+	&:hover,
+	&:focus {
+		text-decoration: underline;
+		font-weight: 500;
+	}
 `;
 
 export const Brand = styled.p`

@@ -24,7 +24,7 @@ export function ProductCard({ imagePath, width, productName, brand, price }) {
 				</Favourite>
 			</ImageWrapper>
 			<div>
-				<Name>{productName}</Name>
+				<Name to="/">{productName}</Name>
 				<Brand>{brand}</Brand>
 				<PriceInfo>
 					<Price>{price} UAH</Price>
