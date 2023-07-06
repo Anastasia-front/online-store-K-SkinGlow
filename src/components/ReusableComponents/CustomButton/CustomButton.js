@@ -1,0 +1,31 @@
+/* eslint-disable indent */
+import { NavLink } from 'react-router-dom';
+
+import { styled } from 'styled-components';
+
+export const Button = styled(NavLink)`
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 220px;
+	height: 50px;
+	padding: 12px 24px;
+	background-color: ${({ $bgcolor }) => $bgcolor};
+	cursor: pointer;
+
+	color: ${({ color }) => color};
+	font-size: 16px;
+	line-height: 1.5;
+	text-align: center;
+
+	border: ${({ color }) => (color === 'var(--color-black)' ? '1px solid var(--color-black)' : 'none')};
+	transition: color var(--animat), background-color var(--animat), border var(--animat);
+
+	&:hover,
+	&:focus {
+		color: ${({ color }) => (color === 'var(--color-white)' ? 'var(--color-black)' : 'var(--color-white)')};
+		background-color: ${({ $bgcolor }) =>
+			$bgcolor === 'var(--color-black)' ? 'var(--color-white)' : 'var(--color-black)'};
+		border: ${({ color }) => (color === 'var(--color-white)' ? '1px solid var(--color-black)' : 'none')};
+	}
+`;
