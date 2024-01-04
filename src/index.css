@@ -15,6 +15,14 @@
 
 	/* animat */
 	--animat: 0.5s ease-in-out;
+
+	/*fonts*/
+	--font-size-xs: 16px;
+	--font-size-sm: 20px;
+	--font-size-md: 24px;
+	--font-size-lg: 48px;
+	--font-size-xl: 66px;
+	--font-size-xxl: 160px;
 }
 
 * {
