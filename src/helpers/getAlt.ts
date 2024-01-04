@@ -1,4 +1,4 @@
-export const getAltNameFromPath = (filePath: string): string => {
+export const getAltNameFromPath = (filePath: string) => {
   const fileName = filePath.split("/").pop(); // Get the last part of the path (filename)
 
   if (fileName) {
